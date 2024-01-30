@@ -1,0 +1,88 @@
+.App {
+  font-family: Arial, sans-serif;
+  margin: 10px 10px;
+ 
+}
+
+h1 {
+  text-align: center;
+}
+
+button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-right: 10px;
+  margin: 10px;
+}
+button:hover {
+  background-color: #0056b3;
+}
+span {
+  color: gray;
+}
+
+input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+
+.navigation{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+
+}
+.cinput{
+  width:auto ;
+  height: 25px;
+  align-items: center;
+  /* border: none; */
+}
+.timezone{
+  margin-left: 10px;
+  display: flex;
+  justify-content:start;
+  align-items: center;
+
+}
+select{
+  height: 25px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  margin-left: 10px;
+}
+.table-container {
+  overflow-x: auto; 
+  /* Enable horizontal scrolling */
+  max-width: 100%; /* Adjust the maximum width as needed */
+}
+
+table {
+  width: 100%; /* Set the table width to 100% */
+  border-collapse: collapse; /* Collapse table borders */
+}
+
+th, td {
+  align-items: center;
+  padding: 8px; /* Adjust padding as needed */
+  border: 1px solid #ddd; /* Add border for cells */
+  white-space: nowrap; /* Prevent text wrapping */
+}
+
+thead th {
+  background-color: #f2f2f2; /* Set background color for table header */
+}
+table tr td:first-child {  
+   background-color: pink;
+}
+th:first-child, td:first-child {
+  position: sticky;
+  left: 0;
+  z-index: 1;
+  background-color: white; /* Ensure the first column appears above the other columns */
+}
